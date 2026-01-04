@@ -1,113 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Shelly Srivastava | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelly Srivastava - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">Shelly Srivastava</div>
+                <button class="mobile-toggle" id="mobileToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <!-- 🔹 Navbar -->
-  <nav class="navbar">
-    <div class="logo">Shelly</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Shelly Srivastava</h1>
+            <p class="subtitle">Full Stack Developer • Open Source Contributor • CSE @ NIT Manipur</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
 
-  <!-- 🔹 Hero Section -->
-  <section class="hero">
-    <h1>Hi, I'm Shelly Srivastava</h1>
-    <p>Web Developer • Open Source Learner • BTech @ NIT Manipur</p>
-    <div class="hero-buttons">
-      <a href="assets/resume.pdf" class="btn" download>📄 Resume</a>
-      <a href="#contact" class="btn">📬 Contact</a>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a second-year Computer Science student at NIT Manipur with a passion for building full-stack web applications and contributing to open source. With a strong foundation in data structures and algorithms, I've solved 200+ DSA problems and continue to expand my skills in modern web technologies.</p>
+                    <p style="margin-top: 1rem;">Currently maintaining an impressive <strong style="color: var(--primary);">8.95 CGPA</strong>, I'm actively involved in hackathons, coding competitions, and open-source communities. I love creating practical solutions that solve real-world problems.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">8.95</div>
+                        <div class="stat-label">CGPA</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">200+</div>
+                        <div class="stat-label">DSA Problems</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">11+</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">GSSoC</div>
+                        <div class="stat-label">Contributor</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- 🔹 About -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-<p>
-I’m a 2nd-year B.Tech student with a strong passion for web development and open source.  
-I love creating interactive, user-friendly web applications using HTML, CSS, and JavaScript, and I’m constantly exploring new tools and technologies to sharpen my skills.  
-Currently, I’m learning advanced frontend concepts and contributing to open-source projects to gain real-world experience.  
-My goal is to build impactful digital solutions that make everyday tasks simpler, smarter, and more accessible.
-</p>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Web & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Database & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">CloudFront</span>
+                        <span class="skill-tag">EC2</span>
+                        <span class="skill-tag">IAM</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Vercel</span>
+                        <span class="skill-tag">Netlify</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Should I Bunk?</h3>
+                        <p class="project-tech">MERN Stack</p>
+                        <p>Full-stack academic decision support system that analyzes attendance and deadlines to recommend whether skipping a class is safe. Implements REST APIs with real-time risk score computation.</p>
+                        <div class="project-links">
+                            <a href="https://should-i-bunk-self.vercel.app" target="_blank" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/shellsri/should-i-bunk-" target="_blank" class="project-link">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- 🔹 Skills -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>C</li>
-      <li>C++</li>
-      <li>Python</li>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-      <li>Git & GitHub</li>
-      <li>Pandas</li>
-      <li>Numpy</li>
-      <li>MERN Stack</li>
-    </ul>
-  </section>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>AWS Static Website with CDN</h3>
+                        <p class="project-tech">AWS S3, CloudFront, IAM</p>
+                        <p>Deployed static website on Amazon S3 with secure public access using bucket policies. Integrated CloudFront CDN for HTTPS and low-latency global content delivery.</p>
+                        <div class="project-links">
+                            <a href="https://dpwar8t52aw67.cloudfront.net" target="_blank" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/shellsri/aws-static-website" target="_blank" class="project-link">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- 🔹 Projects -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <p>Here are some of the projects I’ve worked on recently. Check them out below!</p></section>
-    
-<div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>LeetCode Progress Tracker</h3>
+                        <p class="project-tech">React, JavaScript</p>
+                        <p>Web application to track 100+ solved LeetCode problems across 6+ DSA topics. Features interactive charts for difficulty-wise progress and consistency visualization.</p>
+                        <div class="project-links">
+                            <a href="https://leettracker-pink.vercel.app/" target="_blank" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/shellsri/leettrack" target="_blank" class="project-link">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="project-card">
-    <h3>🌐 Portfolio Website</h3>
-    <p>A dark-themed responsive website built with HTML, CSS & JS.</p>
-    <a href="https://shellsri.github.io/portfolio/" target="_blank">🔗 Live</a> |
-    <a href="https://github.com/shellsri/portfolio-website" target="_blank">💻 GitHub</a>
-  </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Smart Classroom Scheduler</h3>
+                        <p class="project-tech">React, Node.js</p>
+                        <p>Smart scheduling web app for managing classes, timetables, and resources efficiently. Built for Smart India Hackathon with optimized resource allocation algorithms.</p>
+                        <div class="project-links">
+                            <a href="https://tinyurl.com/37acz27f" target="_blank" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/shellsri/timetable" target="_blank" class="project-link">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="project-card">
-    <h3>💰 Personal Finance Tracker</h3>
-    <p>A simple tool to track your income and expenses.</p>
-    <a href="https://shellsri.github.io/personal-finance-tracker/" target="_blank">🔗 Live</a> |
-    <a href="https://github.com/shellsri/personal-finance-tracker" target="_blank">💻 GitHub</a>
-  </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Movie Discovery App</h3>
+                        <p class="project-tech">React, API Integration</p>
+                        <p>Dynamic movie discovery application with search functionality and detailed movie information. Features responsive design and smooth user experience.</p>
+                        <div class="project-links">
+                            <a href="https://react-movie-apps-beta.vercel.app/" target="_blank" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/shellsri/react-movie-app" target="_blank" class="project-link">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
 
-  <!-- Add more cards here if needed -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Personal Finance Tracker</h3>
+                        <p class="project-tech">HTML, CSS, JavaScript</p>
+                        <p>Simple yet effective tool to track income and expenses. Features budget visualization and spending analytics with local storage persistence.</p>
+                        <div class="project-links">
+                            <a href="https://shellsri.github.io/personal-finance-tracker/" target="_blank" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/shellsri/personal-finance-tracker" target="_blank" class="project-link">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
 
-  <div class="project-card">
-    <h3>Open-Source Project Finder</h3>
-    <p>A web app to help you find open source projects to contribute to, built with HTML, CSS & JS.</p>
-    <a href="https://shellsri.github.io/os-project-finder/" target="_blank">🔗 Live</a> |
-    <a href="hhttps://github.com/shellsri/os-project-finder" target="_blank">💻 GitHub</a>
-  </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Open Source Project Finder</h3>
+                        <p class="project-tech">HTML, CSS, JavaScript</p>
+                        <p>Web app to help developers find open source projects to contribute to based on their interests and skill level. Features filtering and search capabilities.</p>
+                        <div class="project-links">
+                            <a href="https://shellsri.github.io/os-project-finder/" target="_blank" class="project-link">🔗 Live Demo</a>
+                            <a href="https://github.com/shellsri/os-project-finder" target="_blank" class="project-link">💻 Code</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="project-card">
-  <h3>Timetable & Smart Classroom Scheduler (SIH App)</h3>
-  <p>A smart scheduling web app for managing classes, timetables, and resources efficiently — built for the Smart India Hackathon.</p>
-  <a href="https://storied-strudel-d539d0.netlify.app/dashboard" target="_blank">🔗 Live</a> |
-  <a href="https://github.com/shellsri/timetable" target="_blank">💻 GitHub</a>
-</div>
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <h2 class="section-title">Achievements & Activities</h2>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <strong>GirlScript Summer of Code (GSSoC) 2025</strong> - Selected as a contributor for one of India's largest open-source programs
+                </div>
+                <div class="achievement-item">
+                    <strong>Smart India Hackathon Participant</strong> - Participated in multiple national-level hackathons including SIH
+                </div>
+                <div class="achievement-item">
+                    <strong>200+ DSA Problems Solved</strong> - Across platforms like LeetCode, GeeksforGeeks, and Codeforces
+                </div>
+                <div class="achievement-item">
+                    <strong>8.95 CGPA</strong> - Maintaining academic excellence while actively coding and contributing to open source
+                </div>
+                <div class="achievement-item">
+                    <strong>Active Open Source Contributor</strong> - Regular contributions to community projects and technical initiatives
+                </div>
+                <div class="achievement-item">
+                    <strong>Club Member</strong> - Active member of Coding and Innovation Clubs at NIT Manipur
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p style="color: var(--gray); max-width: 600px; margin: 0 auto 2rem;">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+            <div class="contact-links">
+                <a href="mailto:shelly.sri18@gmail.com" class="contact-link">
+                    📧 Email
+                </a>
+                <a href="https://www.linkedin.com/in/shelly-srivastava-/" target="_blank" class="contact-link">
+                    💼 LinkedIn
+                </a>
+                <a href="https://github.com/shellsri" target="_blank" class="contact-link">
+                    💻 GitHub
+                </a>
+                <a href="tel:+918688211815" class="contact-link">
+                    📱 Phone
+                </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Shelly Srivastava. Built with passion and code ✨</p>
+        </div>
+    </footer>
 
-</div>
-
-  <!-- 🔹 Contact -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Email: yourname@example.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/shelly-srivastava-">shelly-srivastava-</a></p>
-    <p>GitHub: <a href="https://github.com/shellsri">shellsri</a></p>
-  </section>
-<script src="script.js"></script>
-
+    <script src="script.js"></script>
 </body>
 </html>
-
-
